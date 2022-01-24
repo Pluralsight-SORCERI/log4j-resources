@@ -21,12 +21,11 @@ Recent Log4j v1.x vulnerabilitites:
 SolarWinds LDAP authentication:
 - (CVE-2021-35247)[https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35247]
 
-## Other Important Notes:
+## Other Misc Notes:
 - Apache has released new versions that address the concerns found from additional vulnerabilities
 - The vulnerability was initially discoveredc and privately reported by Chen Zhaojin of Alibaba on November 24, 2021
 - The exploit was first detected by Cloudflare on December 1, 2021
 - A proof of concept of the exploit was published on GitHub on December 9, 2021
-- Log4j versions 2.0-beta9 to 2.14.1 are vulnerable (NOT version 1.x - that we know of yet). It is critical to identify if these versions are running.
 
 ## Helpful Tools, Scanners, and Repositories
 Official CISA Guidance & Resources
