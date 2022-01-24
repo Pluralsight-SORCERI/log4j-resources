@@ -1,27 +1,27 @@
 # log4j-resources
 Collection of resources for responding to the Log4j set of vulnerabilities.
 
-(Pluralsight - Log4j Vulnerability: What you should know)[https://app.pluralsight.com/library/courses/log4j-vulnerability-what-you-should-know/]
+[Pluralsight - Log4j Vulnerability: What you should know](https://app.pluralsight.com/library/courses/log4j-vulnerability-what-you-should-know/)
 
 **The current recommendation for remediation teams is to immediately path to the newest version of log4j.**
 
 ## Vulnerabilities
 The remote code execution (RCE) vulnerabilities are being referred to as "Log4Shell". There have been a few CVEs related to this overall vulnerability:
-- (CVE-2021-44228)[https://cve.mitre.org/cgi-bin/cvename.cgi?name=2021-44228]
-- (CVE-2021-45046)[https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45046]
-- (CVE-2021-44832)[https://cve.mitre.org/cgi-bin/cvename.cgi?name=2021-44832]
+- [CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2021-44228)
+- [CVE-2021-45046](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45046)
+- [CVE-2021-44832](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2021-44832)
 
 Additional Recent Log4j v2.x Vulnerabilities:
-- (CVE-2021-54105)[https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45105]
+- [CVE-2021-54105](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45105)
 
 Recent Log4j v1.x vulnerabilitites:
-- (CVE-2021-4104)[https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4104]
-- (CVE-2021-42550)[https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42550]
+- [CVE-2021-4104](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4104)
+- [CVE-2021-42550](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42550)
 
 SolarWinds LDAP authentication:
-- (CVE-2021-35247)[https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35247]
+- [CVE-2021-35247](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35247)
 
-## Other Misc Notes:
+## Other Important Notes:
 - Apache has released new versions that address the concerns found from additional vulnerabilities
 - The vulnerability was initially discoveredc and privately reported by Chen Zhaojin of Alibaba on November 24, 2021
 - The exploit was first detected by Cloudflare on December 1, 2021
