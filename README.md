@@ -3,7 +3,23 @@ Collection of resources for responding to the Log4j set of vulnerabilities.
 
 [Pluralsight - Log4j Vulnerability: What you should know](https://app.pluralsight.com/library/courses/log4j-vulnerability-what-you-should-know/)
 
-**The current recommendation for remediation teams is to immediately path to the newest version of log4j.**
+[COMING SOON - Discussing the aftermath of Log4j and remaining security concerns](https://www.pluralsight.com/events/2022/aftermath_of_log4j)
+
+[COMING SOON TO FREE! - Log4j Vulnerability Lab: Emulation and Detection](https://app.pluralsight.com/labs/detail/1874f406-cb9a-44a0-841e-c171ce0aebcb/toc)
+
+**The current recommendation for remediation teams is to immediately patch to the newest version of log4j.**
+
+- [Vulnerabilities](## Vulnerabilities)
+- [Attack Examples](Attack Examples)
+- [Helpful Tools, Scanners, and Repositories](## Helpful Tools, Scanners, and Repositories)
+- [Webcasts](## Webcasts)
+- [Additional Articles and References](## Additional Articles and References)
+
+## Misc. Notes:
+- Apache has released new versions that address the concerns found from additional vulnerabilities
+- The vulnerability was initially discovered and privately reported by Chen Zhaojin of Alibaba on November 24, 2021
+- The exploit was first detected by Cloudflare on December 1, 2021
+- A proof of concept of the exploit was published on GitHub on December 9, 2021
 
 ## Vulnerabilities
 The remote code execution (RCE) vulnerabilities are being referred to as "Log4Shell". There have been a few CVEs related to this overall vulnerability:
@@ -21,11 +37,35 @@ Recent Log4j v1.x vulnerabilitites:
 SolarWinds LDAP authentication:
 - [CVE-2021-35247](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35247)
 
-## Other Important Notes:
-- Apache has released new versions that address the concerns found from additional vulnerabilities
-- The vulnerability was initially discoveredc and privately reported by Chen Zhaojin of Alibaba on November 24, 2021
-- The exploit was first detected by Cloudflare on December 1, 2021
-- A proof of concept of the exploit was published on GitHub on December 9, 2021
+## Attack Examples
+**APTs**
+- APT35 (aka "Phosphorus", or "Charming Kitten"), an Iranian actor deploying ransomware and making modification of the Log4j exploit
+	- Utilized similarities from CharmPower - an Android spyware
+	- Uses PowerShell with base64-encoded payloads
+	- Downloads an additional PowerShell module from Amazon S3 bucket
+- HAFNIUM, a Chinese group, attacking virtualization infrastructure to extend what they typically target. They've been seen using DNS to fingerprint various systems
+    - [https://www.cyberscoop.com/nation-state-hackers-aim-to-exploit-log4j-software-flaw-microsoft-warns/](https://www.cyberscoop.com/nation-state-hackers-aim-to-exploit-log4j-software-flaw-microsoft-warns/)
+- [https://www.securityweek.com/microsoft-spots-multiple-nation-state-apts-exploiting-log4j-flaw](https://www.securityweek.com/microsoft-spots-multiple-nation-state-apts-exploiting-log4j-flaw)
+
+**"Serv-U" software attack against SolarWinds**
+- serv-u.exe
+- Can feed the exe data and it'll build an LDAP query 
+- Can be used for log4j attempts or LDAP injection
+- [Microsoft: SolarWinds fixes Serv-U bug exploited for Log4j attacks (bleepingcomputer.com)](https://www.bleepingcomputer.com/news/microsoft/microsoft-solarwinds-fixes-serv-u-bug-exploited-for-log4j-attacks/)
+
+**VMware Horizon servers**
+- Shodan: ~25,000 Horizon servers are internet accessible worldwide
+- From Rapid7: most common activity sees the attacker executing PowerShell and using the built-in System.Net.WebClient object to download cryptocurrency mining software
+- Seen to deploy a reverse shell based on Invoke-WebRev
+- Used to download a Cobalt Strike backdoor
+- PowerShell BitsTransfer objects used as backup download methods
+- Another method using the copy of Node included with VMWare to execute JavaScript code to establish a reverse shell
+- [Active Exploitation of VMware Horizon Servers | Rapid7 Blog](https://www.rapid7.com/blog/post/2022/01/18/active-exploitation-of-vmware-horizon-servers/)
+- [Threat Advisory: VMware Horizon Servers Actively Being Hit With Cobalt Strike (huntress.com)](https://www.huntress.com/blog/cybersecurity-a
+
+**Minecraft Servers**
+- Ransomware (Knonsari Family)
+- [https://www.crn.com/news/security/ransomware-gang-hijacking-log4j-bug-to-hit-minecraft-servers](https://www.crn.com/news/security/ransomware-gang-hijacking-log4j-bug-to-hit-minecraft-servers)
 
 ## Helpful Tools, Scanners, and Repositories
 Official CISA Guidance & Resources
