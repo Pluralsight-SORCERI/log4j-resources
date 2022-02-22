@@ -9,11 +9,15 @@ Collection of resources for responding to the Log4j set of vulnerabilities.
 
 **The current recommendation for remediation teams is to immediately patch to the newest version of log4j.**
 
-- [Vulnerabilities](## Vulnerabilities)
-- [Attack Examples](Attack Examples)
-- [Helpful Tools, Scanners, and Repositories](## Helpful Tools, Scanners, and Repositories)
-- [Webcasts](## Webcasts)
-- [Additional Articles and References](## Additional Articles and References)
+---
+
+**Document Links:**
+- [Misc. Notes](#misc-notes)
+- [Vulnerabilities](#vulnerabilities)
+- [Attack Examples](#attack-examples)
+- [Helpful Tools, Scanners, and Repositories](#helpful-tools-scanners-and-repositories)
+- [Webcasts](#webcasts)
+- [Additional Articles and References](#additional-articles-and-references)
 
 ## Misc. Notes:
 - Apache has released new versions that address the concerns found from additional vulnerabilities
@@ -61,7 +65,7 @@ SolarWinds LDAP authentication:
 - PowerShell BitsTransfer objects used as backup download methods
 - Another method using the copy of Node included with VMWare to execute JavaScript code to establish a reverse shell
 - [Active Exploitation of VMware Horizon Servers | Rapid7 Blog](https://www.rapid7.com/blog/post/2022/01/18/active-exploitation-of-vmware-horizon-servers/)
-- [Threat Advisory: VMware Horizon Servers Actively Being Hit With Cobalt Strike (huntress.com)](https://www.huntress.com/blog/cybersecurity-a
+- [Threat Advisory: VMware Horizon Servers Actively Being Hit With Cobalt Strike](https://www.huntress.com/blog/cybersecurity-a)
 
 **Minecraft Servers**
 - Ransomware (Knonsari Family)
